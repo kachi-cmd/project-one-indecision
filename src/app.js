@@ -1,9 +1,7 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Approuter from './routers/Approuter';
+import IndecisionApp from './components/IndecisionApp';
 import 'normalize.css/normalize.css';
-import './styles/style.scss';
+import './styles/styles.scss';
 
-
-ReactDOM.render(<Approuter /> , document.getElementById('app'));
+ReactDOM.render(<IndecisionApp />, document.getElementById('app'));

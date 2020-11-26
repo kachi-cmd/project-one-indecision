@@ -1,40 +1,39 @@
-//big button
+// Big Button
 .big-button {
-    background : $purple;
-    border: none;
-    border-bottom: .6rem solid darken($purple, 10%);
-    color: white;
-    width: 100;
-    padding: 2.4rem;
-    margin-bottom: $s-size;
-    font-size: $l-size;
-    font-weight: bold;
-
+  background: $purple;
+  border: none;
+  border-bottom: .6rem solid darken($purple, 10%);
+  color: white;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+  width: 100%;
 }
+
 .big-button:disabled {
-    opacity: .5;
+  opacity: .5;
 }
 
-//button
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
+}
+
+// Button
 .button {
-    background : $purple;
-    border: none;
-    border-bottom: .3rem solid darken($purple, 10%);
-    color: white;
-    font-weight: 500;
-    padding: $m-size;
+  background: $purple;
+  border: none;
+  border-bottom: .3rem solid darken($purple, 10%);
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
 }
-//BEM button modifier, not a strict naming rule though!
-.button--link {
-    background:none;
-    border: none;
-    color: $off-white;
-    padding: 0%;
-}
-//BEM-> block element modifier 
 
-@media (min-width: $desktop-breakpoint){
-    .big-button{
-        margin-bottom: $xl-size;
-    }
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
 }
